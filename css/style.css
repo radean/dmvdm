@@ -27,6 +27,9 @@ body {
   text-shadow: 0px 0px 16px #5a5a5a;
   font-size: 5vw ;
 }
+.lead {
+  letter-spacing: 3px;
+}
 /*
  * Buttons Styles
  */
