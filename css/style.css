@@ -15,7 +15,7 @@
   bottom: 0;
   background-color: rgba(0, 1, 16, 0.96);
   /* change if the mask should have another color then white */
-  z-index: 99;
+  z-index: 1040;
   /* makes sure it stays on top */
 }
 #preloader img{
@@ -29,14 +29,14 @@
 
 }
 #status {
-  width: 200px;
-  height: 200px;
+  width: 264px;
+  height: 168px;
   position: absolute;
   left: 50%;
   /* centers the loading animation horizontally one the screen */
   top: 50%;
   /* centers the loading animation vertically one the screen */
-  background-image: url(http://absaco.com/2018/images/loop.gif);
+  background-image: url(http://digigon.vdm.com.pk/img/logo.gif);
   /* path to your loading animation */
   background-repeat: no-repeat;
   background-position: center;
@@ -74,6 +74,9 @@ body {
 .lead {
   letter-spacing: 3px;
 }
+.text-shadow {
+  text-shadow: 0px 0px 32px #000;
+}
 /*
  * Buttons Styles
  */
@@ -96,7 +99,6 @@ body {
   box-shadow: 0px 0px 32px 0px #1CB5E0;
   color: #FFF;
   min-width: 16vw;
-  width: 16vw;
   font-size: 28px;
   border: 0;
   border-radius: 8px;
@@ -192,12 +194,30 @@ body {
   -webkit-box-flex: 1;
   flex: 1;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .flex-md-equal > * {
     -ms-flex: 1;
     -webkit-box-flex: 1;
     flex: 1;
   }
+  .roundedBottom {
+    border-radius: 0 0 50% 50% / 15%;
+  }
 }
 
+@media (max-width: 576px) {
+  .modal-dialog {
+    max-width: 500px;
+    margin: 1.75rem auto;
+  }
+  .modal-dialog-centered {
+    min-height: calc(100% - (1.75rem * 2));
+  }
+  .modal-sm {
+    max-width: 300px;
+  }
+  .roundedBottom {
+    border-radius: 0 0 50% 50% / 2%;
+  }
+}
 .overflow-hidden { overflow: hidden; }
