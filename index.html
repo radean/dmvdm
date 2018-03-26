@@ -17,9 +17,17 @@
 
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,900" rel="stylesheet">
+
+    <!--video-->
+    <!--<link rel="preload" as="intro" href="vid/gondola.mp4" type="video/mp4">-->
   </head>
 
   <body>
+  <div id="preloader">
+    <!--<h2>Loading...</h2>-->
+    <!--<img src="http://absaco.com/2018/images/logo.png"  alt="ABSA Group">-->
+    <div id="status">&nbsp;</div>
+  </div>
   <!--Main Page-->
     <!--Navigation Bar-->
     <nav class="site-header position-absolute fixed-top py-1">
@@ -49,7 +57,7 @@
 
     <!--Main Slider-->
     <div class="position-relative overflow-hidden roundedBottom bg-dark pt-5">
-      <video loop muted autoplay class="fullscreen-bg__video">
+      <video loop muted autoplay class="fullscreen-bg__video" id="intro">
         <source src="vid/gondola.mp4" type="video/mp4">
       </video>
       <div class="col-md-5 p-lg-5 my-5 ml-5">
@@ -285,9 +293,12 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
+  <!--Pre-Loaders Files-->
+  <script src="js/jquery.html5Loader.min.js"></script>
+  <script src="js/main.js"></script>
   <!--Pre-Animation Files-->
   <script src="js/anime.min.js"></script>
   <!--Adding Animation Files-->
