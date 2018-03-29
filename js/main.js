@@ -1,4 +1,13 @@
 
+
+// Smooth Scroll
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 1000);
+});
 // Global Variable
 var baseDomain = "https://git a";
 var host = window.location.protocol + "//" + window.location.host + "/2018/";
