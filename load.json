@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "type":"VIDEO",
+      "sources": {
+        "h264":{
+          "source":"vid/gondola.mp4",
+          "size":8317012
+        }
+      }
+    }
+  ]
+}
