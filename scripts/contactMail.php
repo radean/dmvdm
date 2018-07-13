@@ -1,6 +1,3 @@
-
-
-
 <?php
 // Import PHPMailer classes into the global namespace
 // These must be at the top of your script, not inside a function
@@ -9,6 +6,10 @@ use PHPMailer\PHPMailer\Exception;
 
 //Load Composer's autoloader
 require '../vendor/autoload.php';
+
+
+//Variables
+$reception = "radeanf@gmail.com";
 
 $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
 try {
@@ -24,10 +25,10 @@ try {
 
     //Recipients
     $mail->setFrom('digigon@vdm.com.pk', 'Digigon Enquiry');
-    $mail->addAddress('radeanf@gmail.com', 'Ayaz vayani');     // Add a recipient
+    $mail->addAddress($reception, 'Ayaz vayani');     // Add a recipient
 //    $mail->addAddress('ellen@example.com');               // Name is optional
 //    $mail->addReplyTo('info@example.com', 'Information');
-    $mail->addCC('info@vdm.com.pk');
+//    $mail->addCC('ayazvayani@vdm.com.pk');
 //    $mail->addBCC('bcc@example.com');
 
     //Attachments

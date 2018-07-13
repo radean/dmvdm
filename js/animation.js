@@ -1,6 +1,6 @@
 // Particle.js
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('js/particles.min.js', 'js/particlesjs-config.json', function() {
+particlesJS.load('particles.min.js', 'particlesjs-config.json', function() {
     console.log('callback - particles.js config loaded');
 });
 // Animations -  Anime.js
